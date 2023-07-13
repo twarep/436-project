@@ -18,9 +18,6 @@ We use a Decision Support System (DSS) and linear regression model with the MNIS
 5. To install requirements, run: `pip install -r requirements.txt`
 6. To run the streamlit app, run: `streamlit run app.py`
 
-## Usage:
-
-
 ### Contributors:
 Group 21:
 - Natalie Tam

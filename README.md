@@ -3,7 +3,7 @@
 ## Description:
 We use a Decision Support System (DSS) and linear regression model with the MNIST House Price data set to effectively analyze large amounts of data and predict house prices. This allows us to identify significant factors affecting house prices and perform a sensitivity analysis, enhancing our understanding and providing further insights through visualized results.
 
-## File Structure
+## File Structure:
 - `app.py` - The application code
 - TODO: AFTER RESTRUCTURING, COMPLETE THIS SECTION
 
@@ -19,7 +19,7 @@ We use a Decision Support System (DSS) and linear regression model with the MNIS
 - TODO: CODING/VIDEO DONE, COMPLETE THIS SECTION
 
 ### Contributors:
-Group 21
+Group 21:
 - Natalie Tam
 - Kanishk Dutta
 - Peter Twarecki

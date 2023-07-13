@@ -1,6 +1,7 @@
 with tab2:
 
   def top_factors(top, facts):
+  #function prints the top three features based on weight in linear regression
     st.header("The top 3 factors helping increase your home price are:")
     for a in range(len(top)):
       notation = str(a+1) + ". " + facts[top[a]]

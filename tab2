@@ -1,1 +1,9 @@
-
+with tab2:
+  st.header('How to increase the price of :blue[your house] :house:')
+  current_price = "$" + str(st.session_state.SalePrice)
+  user_price_string = "Your current selling price is: " + current_price
+  st.subheader(user_price_string)
+  top_factors(top_three, feature_list) #calling function to print top three factors
+  st.write("We recommend you consider renovating the house and sprucing up the place with fresh paint to improve the overall condition of the house!")
+  st.write("We recommend you consider adding additional rooms to the house. Many buyers zero in on the rooms as the central feature of a home, so if you don't have many rooms, it can ultimately affect how much you garner from a sale.")
+  st.write("Break up two-story walls and expand the amount of space in your garage!")

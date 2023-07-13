@@ -8,11 +8,10 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from datetime import datetime
 
-
-
-
-
-
+import model
+import tab1
+import tab2
+import tab3
 
 # data column list
 column_list = ['LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'TotalBsmtSF', 'GrLivArea', 'BsmtFullBath',
@@ -24,17 +23,12 @@ feature_list = ['LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemod
                'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'GarageCars', 'GarageArea',
                'OpenPorchSF', 'EnclosedPorch', 'ThreeSsnPorch', 'ScreenPorch', 'MoSold']
 
-
-
 # state initialization, each to 0
 for feature in feature_list:
   if feature not in st.session_state:
     st.session_state[feature] = 0
 if 'SalePrice' not in st.session_state:
   st.session_state['SalePrice'] = 0
-
-
-
 
 # 80TH Percentile
 model_80th_percentile = model_df[feature_list].quantile(0.8)
@@ -74,14 +68,6 @@ r2 = r2_score(y_true = y_test, y_pred = y_predict_std)
 # Standardized weights
 weights_total = np.sum(np.abs(weights))
 absolute_weighted_values = weights/weights_total
-
-
-
-
-
-
-
-
 
 
 st.title('Sell with ML :house:')

@@ -1,4 +1,11 @@
 with tab2:
+
+  def top_factors(top, facts):
+    st.header("The top 3 factors helping increase your home price are:")
+    for a in range(len(top)):
+      notation = str(a+1) + ". " + facts[top[a]]
+      st.write(notation)
+
   st.header('How to increase the price of :blue[your house] :house:')
   current_price = "$" + str(st.session_state.SalePrice)
   user_price_string = "Your current selling price is: " + current_price

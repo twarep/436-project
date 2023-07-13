@@ -5,18 +5,18 @@ We use a Decision Support System (DSS) and linear regression model with the MNIS
 
 ## File Structure:
 - `app.py` - The application code
-- TODO: AFTER RESTRUCTURING, COMPLETE THIS SECTION
+- `model.py` - Testing and training of the LR model
+- `tab1.py` - House feature input page
+- `tab2.py` - Top 3 factors of the house, and sensitivity analysis
+- `tab3.py` - Data visualization and heat map
 
-## To Run:
+## Setup:
 1. Copy the repository to your computer. run: `git clone https://github.com/twarep/436-project.git`
 2. Create and activate a Python virtual environmment, you can use: `python -m venv venv`
 3. To activate the virtual environment on mac/linux with all packages installed, run: `source venv/bin/activate`
 4. To activate the virtual environment on mac/linux with all packages installed, run: `venv\bin\activate.bat`
 5. To install requirements, run: `pip install -r requirements.txt`
 6. To run the streamlit app, run: `streamlit run app.py`
-
-## Usage: 
-- TODO: CODING/VIDEO DONE, COMPLETE THIS SECTION
 
 ### Contributors:
 Group 21:

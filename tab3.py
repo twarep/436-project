@@ -1,4 +1,11 @@
-with tab3:
+import streamlit as st
+import plotly.graph_objects as go
+import plotly.express as px
+from model import train_model
+
+weights, mse_test, r2, absolute_weighted_values, model_df = train_model()
+
+def tab3():
   st.subheader("Visualizations of Variables:")
   labels = ['LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'TotalBsmtSF',
   'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath',
@@ -25,4 +32,3 @@ with tab3:
   col1.metric("R-score", r2, "")
   # MSE was computed in the computations above:
   col2.metric("MSE Test Score", "39440790871.19446", "")
-

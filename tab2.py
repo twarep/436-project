@@ -1,5 +1,14 @@
-with tab2:
+import streamlit as st
+from model import train_model
 
+# feature list
+feature_list = ['LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'TotalBsmtSF', 'GrLivArea', 'BsmtFullBath',
+               'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'GarageCars', 'GarageArea',
+               'OpenPorchSF', 'EnclosedPorch', 'ThreeSsnPorch', 'ScreenPorch', 'MoSold']
+
+weights, mse_test, r2, absolute_weighted_values, model_df = train_model()
+
+def tab2():
   def top_factors(top, facts):
   #function prints the top three features based on weight in linear regression
     st.header("The top 3 factors helping increase your home price are:")

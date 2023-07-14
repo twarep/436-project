@@ -4,11 +4,13 @@
 We use a Decision Support System (DSS) and linear regression model with the MNIST House Price data set to effectively analyze large amounts of data and predict house prices. This allows us to identify significant factors affecting house prices and perform a sensitivity analysis, enhancing our understanding and providing further insights through visualized results.
 
 ## File Structure:
-- `app.py` - The application code
+- `app.py` - The streamlit application code
 - `model.py` - Testing and training of the LR model
 - `tab1.py` - House feature input page
 - `tab2.py` - Top 3 factors of the house, and sensitivity analysis
 - `tab3.py` - Data visualization and heat map
+
+Each tab is used as a separate view in the DSS. This design is so the user can focus on one task at a time, whether it be inputting data, seeing statistical insights, or viewing visualizations.
 
 ## Setup:
 1. Copy the repository to your computer. run: `git clone https://github.com/twarep/436-project.git`
